@@ -1,0 +1,41 @@
+<!--
+
+  Lansite MatchBox HTML Template
+  By Tanner Krewson
+
+-->
+
+<template id="MatchBox">
+	<div class="panel panel-primary">
+			<div class="panel-heading">
+			    <h3 class="panel-title">Prochaines animations et inscription</h3>
+			<div>Merci de ne t'inscrire qu'à une seule animation en même temps.</div>
+			</div>
+			<div class="panel-body">
+				<p class="matchboxempty" style="text-align:center">Aucune animation n'est prévue.</p>
+				<div class="matches">
+
+				</div><br/>
+				<button class="btn btn-primary pull-right matchadd" type="button" data-toggle="modal" data-target="#MatchBox-Popup">+ Créer une animation</button><br/>
+			</div>
+	</div>
+</template>
+
+<template id="MatchBox-match">
+	<div class="input-group match">
+		<span class="input-group-addon matchstring" style="width: 100%; text-align: left;">
+				error
+	    </span>
+	    <span class="input-group-addon">
+	    	<button class="btn btn-default dropdown-toggle matchcounter" type="button" id="matchdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">X
+			</button>
+			<ul class="dropdown-menu matchusers" aria-labelledby="matchdropdown">
+			</ul>
+	    	<button class="btn btn-primary matchaccept" type="button">Je m'inscris !</button>
+	    	<button class="btn btn-danger matchcancel" type="button">Se désinscrire</button>
+	    	<button class="btn btn-secondary matchfull" type="button" disabled hidden>Plein</button>
+	    </span>
+    </div>
+</template>
+
+<script src="js/boxes/MatchBox.js"></script>

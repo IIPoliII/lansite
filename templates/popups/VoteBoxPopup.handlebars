@@ -1,0 +1,36 @@
+<!--
+
+  Lansite VoteBox Popup
+  By Tanner Krewson
+
+-->
+
+<div id="VoteBox-Popup" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Créer un vote</h4>
+			</div>
+			<div class="modal-body">
+				<div style="width:100%; display:table">
+					<div class="input-group" style="display:table-cell; width:100%">
+						Entre la question de la votation:
+				    	<input type="text" class="form-control reqvotetitle" placeholder="e.g. A quel jeu voulez-vous jouer ?"/>
+					</div><!-- /input-group -->
+				</div>
+				<br>
+				<div style="width:100%; display:table">
+					<div class="input-group" style="display:table-cell; width:100%">
+						Entre les choix séparés par des points-virgules :
+				    	<input type="text" class="form-control reqvotechoices" placeholder="e.g. Battlefield 2;Minecraft;Quake Live"/>
+					</div><!-- /input-group -->
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+				<button id="VoteBox-Popup-submit" type="button" class="btn btn-primary" data-dismiss="modal">Créer</button>
+			</div>
+		</div>
+	</div>
+</div>

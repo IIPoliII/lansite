@@ -1,0 +1,43 @@
+<!--
+
+  Lansite MatchBox Popup
+  By Tanner Krewson
+
+-->
+
+<div id="MatchBox-Popup" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Créer une animation</h4>
+			</div>
+			<div class="modal-body">
+				<div style="width:100%; display:table">
+					<div class="input-group" style="display:table-cell; width:100%">
+						Nom du jeu :
+				    	<input type="text" class="form-control matchpopupgame"/>
+					</div><!-- /input-group -->
+				</div>
+				<br>
+				<div style="width:100%; display:table">
+					<div class="input-group" style="display:table-cell; width:100%">
+						Nombre minimum de joueurs:
+				    	<input type="number" class="form-control matchpopupmin" placeholder="Doit être de 2 ou plus"/>
+					</div><!-- /input-group -->
+				</div>
+				<br>
+				<div style="width:100%; display:table">
+					<div class="input-group" style="display:table-cell; width:100%">
+						Nombre maximum de joueurs: (0 pour pas de limite)
+				    	<input type="number" class="form-control matchpopupmax" placeholder="Doit être plus grand que le minimum ou 0"/>
+					</div><!-- /input-group -->
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+				<button id="MatchBox-Popup-submit" type="button" class="btn btn-primary" data-dismiss="modal">Créer</button>
+			</div>
+		</div>
+	</div>
+</div>

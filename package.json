@@ -1,0 +1,28 @@
+{
+  "name": "lansite",
+  "version": "0.4.0",
+  "description": "Lansite is web app made for smaller LAN parties. It is designed to be a simple, central information hub for all attendees.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^3.1.0",
+    "passport": "^0.4.1",
+    "passport-steam": "^1.0.12",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tannerkrewson/Lansite"
+  },
+  "author": "Tanner Krewson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tannerkrewson/Lansite/issues"
+  },
+  "homepage": "https://github.com/tannerkrewson/Lansite#readme"
+}

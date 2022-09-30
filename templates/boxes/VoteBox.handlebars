@@ -1,0 +1,42 @@
+<!--
+
+  Lansite VoteBox HTML Template
+  By Tanner Krewson
+
+-->
+
+<template id="VoteBox">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+		    <h3 class="panel-title lead votetitle">error</h3>
+		</div>
+		<div class="panel-body">
+			<div class="choices">
+			</div>
+			<div class="input-group">
+				<input type="text" class="form-control voteadd" placeholder="Add a choice...">
+				<span class="input-group-btn">
+					<button class="btn btn-default voteaddbutton" type="button"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+				</span>
+			</div><!-- /input-group -->
+		</div>
+	</div>
+</template>
+
+<template id="VoteBox-choice">
+	<div class="input-group">
+		<span class="input-group-btn">
+			<button class="btn btn-default dropdown-toggle choicevotes" type="button" data-toggle="dropdown" aria-haspopup="true">+0</button>
+			<ul class="dropdown-menu choicevoterslist" aria-labelledby="">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+			</ul>
+		</span>
+		<input type="text" class="form-control choicename" readonly="readonly" value="error">
+		<span class="input-group-addon">
+			<input type="checkbox" class="choicevotebutton" aria-label="...">
+		</span>
+	</div><!-- /input-group -->
+</template>
+
+<script src="js/boxes/VoteBox.js"></script>

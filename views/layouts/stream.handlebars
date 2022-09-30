@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+    <title>JV_LAN</title>
+</head>
+
+<body>
+    <div class="container">
+        {{#each popups}}
+            {{{this.template}}}
+        {{/each}}
+        {{>navbar}}
+        <br>
+        <br>
+        {{{body}}}
+        <footer class="footer">
+        </footer>
+        <!--/.row-->
+    </div>
+    <!-- /container -->
+
+    {{>scripts_base}}
+    {{>scripts_stream}}
+
+    {{#each boxes}}
+        {{{this.template}}}
+    {{/each}}
+
+</body>
+
+</html>
